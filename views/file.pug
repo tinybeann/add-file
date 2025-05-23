@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Thông tin file
+  body
+    h1= filename
+    p Kích thước: #{(stats.size / 1024).toFixed(2)} KB
+    p Tạo lúc: #{stats.birthtime.toLocaleString()}
+    p Sửa đổi gần nhất: #{stats.mtime.toLocaleString()}
+    a(href="/") Quay lại

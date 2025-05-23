@@ -1,0 +1,247 @@
+1. Cho mảng A[], B[] gồm N và M phần tử, hãy chèn mảng B vào chỉ số P của mảng A và in ra mảng A[] sau khi chèn.
+
+Đầu vào
+Dòng 1 gồm N, M và P
+
+Dòng 2 gồm các phần trong mảng A[]
+
+Dòng 3 gồm các phần tử trong mảng B[]
+
+Giới hạn
+1<=N<=M<=1000
+
+0<=P<=N
+
+0<=A[i], B[i]<=1000
+
+Đầu ra
+In ra mảng A[] sau khi chèn
+
+Ví dụ :
+Input 01
+Copy
+3 3 0
+1 2 3
+4 5 6
+Output 01
+4 5 6 1 2 3
+
+Input 02
+3 3 1
+1 2 3
+4 5 6
+Output 02
+1 4 5 6 2 3
+
+2. Cho mảng A[] gồm N phần tử, hãy dịch các phần tử trong mảng sang trái K lần, khi dịch trái thì phần tử đầu tiên của dãy sẽ quay vòng lại trở thành phần tử cuối cùng
+
+Đầu vào
+Dòng 1 gồm N và K
+
+Dòng 2 gồm N số của mảng A[]
+
+Giới hạn
+1<=N<=1000
+
+1<=K<=1000
+
+0<=A[i]<=100
+
+Đầu ra
+In ra mảng sau khi xoay trái
+
+Ví dụ :
+Input 01
+10 3
+1 2 3 4 5 6 7 8 9 10
+Output 01
+4 5 6 7 8 9 10 1 2 3
+
+3. Cho mảng A[] gồm N phần tử, nhiệm vụ của bạn là xóa các phần tử trong mảng sao cho không có 2 phần tử liền kề có giá trị giống nhau.
+
+Ví dụ : mảng A[] = {1, 1, 2, 2, 2, 3, 3, 2, 1, 4} sau khi xóa sẽ được A[] = {1, 2, 3, 2, 1, 4}
+
+Đầu vào
+Dòng 1 gồm N
+
+Dòng 2 gồm N số của mảng A[]
+
+Giới hạn
+1<=N<=1000
+
+0<=A[i]<=100
+
+Đầu ra
+In ra mảng sau khi xóa
+
+Ví dụ :
+Input 01
+11
+2 3 3 0 0 0 3 3 3 3 4
+Output 01
+2 3 0 3 4
+
+4. Cho mảng số nguyên A[] gồm N phần tử, bạn hãy tìm giá trị nhỏ nhất trong mảng và giá trị lớn nhất trong mảng cũng như các vị trí xuất hiện của chúng.
+
+Đầu vào
+Dòng 1 là N : số phần tử trong mảng
+
+Dòng 2 gồm N phần tử viết cách nhau 1 dấu cách
+
+Giới hạn
+1<=N<=1000
+
+0<=A[i]<=10^6
+
+Đầu ra
+Dòng 1 in giá trị nhỏ nhất
+
+Dòng 2 in các chỉ số chứa giá trị nhỏ nhất từ trái qua phải, cách nhau 1 dấu cách
+
+Dòng 3 in giá trị lớn nhất
+
+Dòng 4 in ra các chỉ số chứa giá trị lớn nhất từ phải qua trái, cách nhau 1 dấu cách
+
+Ví dụ :
+Input 01
+6
+1 2 3 1 1 3
+Output 01
+1
+0 3 4
+3
+5 2
+
+5. Cho mảng A[] gồm N phần tử, bạn hãy kiểm tra xem giá trị X có xuất hiện trong mảng không?
+
+Gợi ý : Dùng mảng đánh dấu để mỗi test case chỉ mất O(1) thay vì tìm kiếm tuyến tính sẽ mất O(N)
+
+Đầu vào
+Dòng 1 là N : số phần tử trong mảng
+
+Dòng 2 là N số trong mảng viết cách nhau 1 dấu cách
+
+Dòng 3 là T : Số test case
+
+T dòng tiếp theo mỗi dòng là số nguyên X
+
+Giới hạn
+1<=N<=10^6
+
+0<=A[i]<=10^7
+
+1<=T<=10^4
+
+0<=X<=10^7
+
+Đầu ra
+Đối với mỗi test case in ra YES nếu X xuất hiện trong mảng, ngược lại in NO.
+
+Ví dụ :
+Input 01
+9
+2 41 21 28 27 3 49 22 2 
+5
+3
+27
+15
+15
+19
+Output 01
+YES
+YES
+NO
+NO
+NO
+
+6. Cho mảng A[] gồm N phần tử, bạn hãy tính tổng của 2 số liên tiếp, 3 số liên tiếp, 4 số liên tiếp trong mảng.
+
+Đầu vào
+Dòng 1 là N : số phần tử trong mảng
+
+Dòng 2 là N số trong mảng viết cách nhau 1 dấu cách
+
+Giới hạn
+4<=N<=1000
+
+0<=A[i]<=1000
+
+Đầu ra
+Dòng 1 in ra tổng 2 số liên tiếp trong mảng
+
+Dòng 2 in ra tổng 3 số liên tiếp trong mảng
+
+Dòng 3 in ra tổng 4 số liên tiếp trong mảng
+
+Ví dụ :
+Input 01
+8
+5 17 4 17 2 13 7 14
+Output 01
+22 21 21 19 15 20 21 
+26 38 23 32 22 34 
+43 40 36 39 36
+
+7. Cho mảng A[] gồm N phần tử, bạn hãy tách từng chữ số của các số trong mảng A[] và đếm xem mỗi chữ số xuất hiện bao nhiêu lần. 
+
+Đầu vào
+Dòng 1 là N : số phần tử trong mảng
+
+Dòng 2 là N số trong mảng viết cách nhau 1 dấu cách
+
+Giới hạn
+1<=N<=10^6
+
+A[i]<= 10^9
+
+Đầu ra
+• In ra các chữ số xuất hiện trong các số ban đầu trong mảng theo thứ tự tăng dần kèm theo số lần xuất hiện của chúng
+
+8. Cho mảng A[] gồm N phần tử, nhiệm vụ của bạn là đối với mỗi phần tử trong mảng A[] bạn hãy tìm phần tử đầu tiên lớn hơn nó nằm ở bên phải, đối với phần tử không có phần tử lớn hơn bên phải thì in ra -1
+
+Ví dụ : mảng A[] là {3, 8, 9, 1, 4, 2, 5} thì kết quả sẽ là 8, 9, -1, 4, 5, 5, -1.
+
+Gợi ý : Đối với mỗi chỉ số i sử dụng 1 vòng for từ i + 1 tới cuối dãy để tìm số đầu tiên lớn hơn A[i], tìm được thì break và in ra.
+
+Đầu vào
+Dòng 1 là N : số phần tử trong mảng
+
+Dòng 2 là N phần tử cách nhau 1 khoảng trắng
+
+Giới hạn
+1<=N<=1000
+
+0<=A[i]<=1000
+
+Đầu ra
+In ra đáp án của bài toán
+
+Ví dụ :
+Input 01
+8
+53 97 89 87 17 70 27 46
+Output 01
+97 -1 -1 -1 70 -1 46 -1
+
+9. Cho mảng A[] gồm N phần tử, có một câu hỏi đó là trong mảng A[] có bao nhiêu cặp số A[i] và A[j] với i khác j mà tổng 2 số này là 1 số chẵn. Nhiệm vụ của bạn là đếm giúp anh ta số cặp thỏa mãn.
+
+Đầu vào
+• Dòng 1 là N : số lượng phần tử trong mảng
+
+• Dòng 2 là N số trong mảng cách nhau 1 dấu cách
+
+Giới hạn
+1<=N<=10^6
+
+0<=A[i]<=10^6
+
+Đầu ra
+In ra số cặp thỏa mãn
+
+Ví dụ :
+Input 01
+8
+11 17 8 18 7 10 3 18
+Output 01
+12
+

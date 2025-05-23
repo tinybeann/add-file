@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Danh sách file
+  body
+    h1 Tải lên file
+    form(action="/upload" method="post" enctype="multipart/form-data")
+      input(type="file" name="file" required)
+      button(type="submit") Upload
+
+    h2 Danh sách file
+    ul
+      each file in files
+        li
+          a(href=`/file/${file.storedName}`)= file.originalName
+          |  - 
+          a(href=`/download/${file.storedName}`) [Tải về]
+          form(action=`/delete/${file.storedName}` method="post" style="display:inline")
+            button(type="submit") Xóa

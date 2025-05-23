@@ -1,0 +1,20 @@
+  *loop
+- for, while
+In tất cả các số chẵn từ 1 đến n được nhập từ bàn phím
+Đảo ngược một số nguyên bất kỳ được nhập từ bàn phím
+In ra hình tam giác với các ký tự *
+In ra màn hình bảng cửu chương của một số nhập từ bàn phí
+Tính giai thừa của một số được nhập từ bàn phím
+Tìm tất cả ước của một số nguyên được nhập từ bàn phím
+Tính lũy thừa của một số nguyên được nhập từ bàn phím
+Tìm ước chung lớn nhất của 2 số nguyên được nhập từ bàn phím
+- break, continue
+In ra màn hình 10 số nhỏ nhất chia hết cho cả 3 và 4 trong khoảng từ 10000 --> 1000000000
+array
+  *array
+- Mảng 1 chiều
+In ra phần tử lớn nhất nhỏ nhất trong mảng
+Liệt kê số nguyên tố trong mảng
+- for lồng nhau (dễ)
+
+
